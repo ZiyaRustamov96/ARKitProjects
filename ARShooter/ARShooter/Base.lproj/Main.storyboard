@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ARShooter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AUd-yS-POg">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2g-0Y-mfG">
+                                <rect key="frame" x="172.66666666666666" y="407" width="48" height="38"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhd-EW-yBj">
+                                <rect key="frame" x="137.33333333333334" y="750.66666666666663" width="118.33333333333334" height="37.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="add targets">
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addTargets:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0kx-aP-W3G"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AUd-yS-POg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0wL-GJ-lsD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AUd-yS-POg" secondAttribute="bottom" id="3AH-Ma-lzU"/>
+                            <constraint firstItem="y2g-0Y-mfG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PWk-LZ-cBI"/>
+                            <constraint firstItem="y2g-0Y-mfG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XsQ-3b-Skz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AUd-yS-POg" secondAttribute="trailing" id="YSm-uO-ieh"/>
+                            <constraint firstItem="xhd-EW-yBj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zlx-PA-tWY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xhd-EW-yBj" secondAttribute="bottom" constant="30" id="grE-fx-gN0"/>
+                            <constraint firstItem="AUd-yS-POg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sYe-aO-2BC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="AUd-yS-POg" id="NPI-HT-cQq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-140" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

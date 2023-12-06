@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AR_Portal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ctu-4k-eE6">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </arscnView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plane Detected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cv2-yk-JQB">
+                                <rect key="frame" x="114.66666666666667" y="99" width="163.66666666666663" height="30.333333333333343"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ctu-4k-eE6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4Yu-zJ-pk8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ctu-4k-eE6" secondAttribute="trailing" id="6I4-NS-aZc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ctu-4k-eE6" secondAttribute="bottom" id="81r-Im-bFZ"/>
+                            <constraint firstItem="ctu-4k-eE6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MR5-Lc-NA9"/>
+                            <constraint firstItem="cv2-yk-JQB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bH3-IQ-gCP"/>
+                            <constraint firstItem="cv2-yk-JQB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="yUn-bN-dXv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="planeDetected" destination="cv2-yk-JQB" id="ATH-Kr-Yb0"/>
+                        <outlet property="sceneView" destination="ctu-4k-eE6" id="Hou-sh-ZFs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.725190839694655" y="-28.169014084507044"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
